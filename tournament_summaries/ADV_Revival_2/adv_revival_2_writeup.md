@@ -106,7 +106,7 @@ With all this data I thought it was an excellent chance to see if we could learn
 Filtering all pokemon showing up in at least 5% of teams, I did a series of Fisher's Exact Tests to compare the win rates between teams that had that pokemon and teams that did not.
 
 
-Ultimately I found that there are 4 pokemon which have a statistically significant effect on win rates. In the below table the odds ratio is how much more or less likely you are to win a game if you reveal one of the below pokemon. So in this case, having a (revealed) Heracross on your team makes you 0.66 times as likely to win as if you didn't have a revealed Heracross.
+Ultimately I found that there are 4 pokemon which have a statistically significant effect on win rates (after a Bonferroni correction). In the below table the odds ratio is how much more or less likely you are to win a game if you reveal one of the below pokemon. So in this case, having a (revealed) Heracross on your team makes you 0.66 times as likely to win as if you didn't have a revealed Heracross.
 
 
 |  Pokemon   | Odds Ratio | p-value  |
@@ -118,7 +118,7 @@ Ultimately I found that there are 4 pokemon which have a statistically significa
 
 
 ### Move Influence on Win Rates
-I did a series of similar tests looking at all pokemon/move combinations that showed up on at least 5% of teams. I compared the win rate of the pokemon who used that move vs the win rate who did not and found 3 significant results.
+I did a series of similar tests looking at all pokemon/move combinations that showed up on at least 5% of teams. I compared the win rate of the pokemon who used that move vs the win rate who did not and found 3 significant results (again after a Bonferroni correction).
 
 
 |  Pokemon   | Move       |Odds Ratio| p-value  |
@@ -135,7 +135,7 @@ All three of these options make somewhat intuitive sense to me. Giga drain on Ce
 Many of the best ADV players participated in ADV Revival 2, but so did many people who are much less good. As a final test I looked at if there was a difference in the win rates when including only games after the first 5 rounds (~800 games) or only games in the final bracket (~50).
 
 
-In both cases, a chi squared test showed that the higher level players bring different pokemon than the overall tournament.
+In both cases, a chi squared test showed that the higher level players bring different pokemon than the overall tournament. And further post-hoc testing showed 4 pokemon for which that relationship was significant.
 
 
 |  Pokemon   | Filter        |Odds Ratio| p-value  |
@@ -146,7 +146,7 @@ In both cases, a chi squared test showed that the higher level players bring dif
 | Milotic    | Final Bracket | 3.476509 | 6.771e-5 |
 
 
-Furthermore, when looking at these smaller subsets no Pokemon showed a statistically significant relationship.
+When looking at these smaller subsets only, no Pokemon showed a statistically significant relationship on overall win rates in either directly. However, the sample size does make that a considerably higher bar to meet.
 
 
 ## Conclusions
