@@ -128,7 +128,7 @@ When looking at these smaller subsets only, no Pokemon showed a statistically si
 
 ## Conclusions
 The takeaways I have from this project are
-1. Heracross, Aerodactyl, Gengar, and Metagross are often misused by lower level players
+1. Heracross, Hariyama, Moltres, Aerodactyl, Gengar, Metagross, and Magneton are often misused by lower level players
 2. Clicking Rock Slide is often a mistake with Aerodactyl
 3. Most pokemon use only 1 or 2 moves in a single game
 4. The best players like Milotic a lot more than the general public
